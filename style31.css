@@ -6,12 +6,12 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #dc0202;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #222;
+    background-color: #af4b4b;
     color: white;
     text-align: center;
     padding: 30px 20px;
@@ -19,7 +19,7 @@ header {
 
 /* Título principal */
 header h2 {
-    color: #ffcc00; /* Cor dourada */
+    color: #ffcd03; /* Cor dourada */
     font-weight: bold; /* Negrito */
     font-size: 2.2em;
 }
@@ -27,7 +27,7 @@ header h2 {
 /* Subtítulo */
 header p {
     font-size: 1.1em;
-    color: #ddd;
+    color: #be0404;
 }
 
 /* Conteúdo principal */
@@ -39,9 +39,9 @@ main {
 
 /* Seções */
 .conteudo h2 {
-    color: #0077cc; /* Azul */
+    color: #cc1313; /* Azul */
     font-weight: bold;
-    border-bottom: 2px solid #0077cc;
+    border-bottom: 2px solid #7a0a13;
     padding-bottom: 5px;
     margin-top: 30px;
 }
@@ -61,7 +61,7 @@ main {
 
 /* Botão */
 button {
-    background-color: #0077cc;
+    background-color: #dc0d0d;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -71,7 +71,7 @@ button {
 }
 
 button:hover {
-    background-color: #005fa3;
+    background-color: #64090f;
 }
 
 /* Rodapé */
