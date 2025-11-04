@@ -3,31 +3,31 @@
 /* Define uma fonte geral e um fundo leve */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: 016B61;
+    background-color: #E5E9C5; /* Fundo claro e suave */
     margin: 0;
     padding: 0;
-    color: 70B2B2;
+    color: #016B61; /* Texto em tom escuro para boa leitura */
 }
 
 /* Cabeçalho */
 header {
-    background-color: 9ECFD4;
-    color:016B61;
+    background-color: #016B61; /* Fundo escuro para destaque */
+    color: #E5E9C5; /* Texto claro para contraste */
     text-align: center;
     padding: 30px 20px;
 }
 
 /* Título principal */
 header h2 {
-    color: 70B2B2; /* Cor dourada */
-    font-weight: bold; /* Negrito */
+    color: #9ECFD4; /* Azul claro que contrasta bem com o fundo escuro */
+    font-weight: bold;
     font-size: 2.2em;
 }
 
 /* Subtítulo */
 header p {
     font-size: 1.1em;
-    color: 9ECFD4
+    color: #70B2B2; /* Verde-água mais suave */
 }
 
 /* Conteúdo principal */
@@ -35,19 +35,23 @@ main {
     padding: 20px;
     max-width: 900px;
     margin: auto;
+    background-color: #FFFFFF; /* Fundo branco para legibilidade */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(1,107,97,0.2);
 }
 
 /* Seções */
 .conteudo h2 {
-    color: #9fa1dd; /* Azul */
+    color: #016B61; /* Destaque em verde escuro */
     font-weight: bold;
-    border-bottom: 2px solid E5E9C5;
+    border-bottom: 2px solid #9ECFD4;
     padding-bottom: 5px;
     margin-top: 30px;
 }
 
 .conteudo p {
     line-height: 1.6;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -57,28 +61,26 @@ main {
     max-width: 100%;
     margin: 15px auto;
     border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 /* Botão */
 button {
-    background-color: 016B61;
+    background-color: #016B61;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: 016B61;
+    background-color: #70B2B2;
 }
 
 /* Rodapé */
 footer {
     text-align: center;
-    background-color: 70B2B2;
-    color: #ccc;
-    padding: 15px 0;
-    margin-top: 40px;
-}
+    background-co
