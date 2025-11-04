@@ -1,37 +1,30 @@
-/* script.js */
+// Espera o carregamento completo do DOM
+document.addEventListener("DOMContentLoaded", function() {
 
-// Array de curiosidades sobre Léa Garcia
-const curiosidades = [
-    "Léa Garcia foi indicada ao prêmio de Melhor Atriz no Festival de Cannes em 1957 pelo filme 'Orfeu Negro', uma coprodução franco-ítalo-brasileira que ganhou o Oscar de Melhor Filme Estrangeiro.",
-    "Ela começou sua carreira no Teatro Experimental do Negro (TEN) em 1952, a convite de Abdias Nascimento, atuando na peça 'Rapsódia Negra'.",
-    "Sua personagem mais conhecida na televisão foi a vilã **Rosa** na primeira versão da novela 'A Escrava Isaura' (1976), um papel que a tornou famosa internacionalmente.",
-    "Léa Garcia recebeu o prêmio de Melhor Atriz no Festival de Gramado em 2004, por sua atuação no filme 'As Filhas do Vento'.",
-    "Ela era muito mais do que apenas uma atriz, sendo também uma importante ativista social e uma voz contra o racismo no Brasil."
-];
+    // Seleciona o botão e o parágrafo onde a curiosidade será exibida
+    const botaoCuriosidade = document.getElementById("curiosidadeBtn");
+    const mensagemCuriosidade = document.getElementById("curiosidadeMensagem");
 
-// Função para selecionar e exibir uma curiosidade aleatória
-function mostrarCuriosidade() {
-    // 1. Encontrar o elemento onde a mensagem será exibida
-    const mensagemElemento = document.getElementById('curiosidadeMensagem');
+    // Cria uma lista de curiosidades sobre Léa Garcia
+    const curiosidades = [
+        "Léa Garcia foi a primeira atriz brasileira indicada à Palma de Ouro no Festival de Cannes, por sua atuação em 'Orfeu Negro' (1959).",
+        "Antes de se tornar atriz, Léa Garcia estudou secretariado e trabalhou como datilógrafa.",
+        "Ela participou do Teatro Experimental do Negro, grupo criado para valorizar artistas negros no Brasil.",
+        "Além de atriz, Léa também foi ativista e defensora dos direitos da população negra no país.",
+        "Sua carreira teve mais de 70 anos de dedicação às artes — um marco na história da dramaturgia brasileira."
+    ];
 
-    // 2. Gerar um índice aleatório
-    const indiceAleatorio = Math.floor(Math.random() * curiosidades.length);
+    // Adiciona o evento de clique no botão
+    botaoCuriosidade.addEventListener("click", function() {
+        // Escolhe uma curiosidade aleatória da lista
+        const curiosidadeAleatoria = curiosidades[Math.floor(Math.random() * curiosidades.length)];
 
-    // 3. Obter a curiosidade correspondente
-    const curiosidadeSelecionada = curiosidades[indiceAleatorio];
+        // Exibe a curiosidade no parágrafo
+        mensagemCuriosidade.textContent = curiosidadeAleatoria;
 
-    // 4. Exibir a curiosidade no parágrafo
-    mensagemElemento.textContent = curiosidadeSelecionada;
+        // Estiliza a mensagem (opcional)
+        mensagemCuriosidade.style.fontStyle = "italic";
+        mensagemCuriosidade.style.marginTop = "10px";
+    });
+});
 
-    // Opcional: Adicionar uma classe para estilização temporária ou animação (se o CSS suportar)
-    mensagemElemento.classList.add('destaque'); 
-    setTimeout(() => {
-        mensagemElemento.classList.remove('destaque');
-    }, 5000); // Remove o destaque após 5 segundos
-}
-
-// 5. Adicionar um 'EventListener' ao botão para chamar a função quando for clicado
-document.getElementById('curiosidadeBtn').addEventListener('click', mostrarCuriosidade);
-
-// Opcional: Chamar a função uma vez para exibir uma curiosidade logo que a página carregar
-// mostrarCuriosidade();
