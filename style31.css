@@ -1,147 +1,84 @@
-/* Importação de fonte para um visual mais agradável */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* style31.css */
 
-/* --- Estilos Gerais --- */
+/* Define uma fonte geral e um fundo leve */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9; /* Fundo suave */
-    color: #333; /* Cor do texto principal */
-    line-height: 1.6;
+    color: #333;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #5d001e; /* Cor vibrante e elegante, inspirada no cinema */
-    color: #fff;
-    padding: 40px 20px;
+    background-color: #222;
+    color: white;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
 }
 
+/* Título principal */
 header h2 {
-    margin-bottom: 5px;
-    font-size: 2.5em;
-    font-weight: 700;
+    color: #ffcc00; /* Cor dourada */
+    font-weight: bold; /* Negrito */
+    font-size: 2.2em;
 }
 
+/* Subtítulo */
 header p {
     font-size: 1.1em;
-    font-weight: 300;
+    color: #ddd;
 }
 
+/* Conteúdo principal */
 main {
     padding: 20px;
-    max-width: 900px; /* Largura máxima do conteúdo */
-    margin: 30px auto; /* Centraliza o conteúdo */
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: auto;
 }
 
-/* --- Estilos da Seção de Conteúdo --- */
-.conteudo {
-    padding: 20px;
-}
-
+/* Seções */
 .conteudo h2 {
-    color: #a3003a; /* Cor de destaque para títulos de seção */
-    margin-top: 30px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #a3003a;
+    color: #0077cc; /* Azul */
+    font-weight: bold;
+    border-bottom: 2px solid #0077cc;
     padding-bottom: 5px;
-    font-weight: 700;
+    margin-top: 30px;
 }
 
 .conteudo p {
+    line-height: 1.6;
     margin-bottom: 20px;
-    text-align: justify;
 }
 
-/* --- Estilos das Imagens --- */
+/* Imagens */
 .conteudo img {
-    max-width: 100%; /* Garante que a imagem se ajuste ao container */
-    max-width: 100%
-    display: block; /* Remove espaço extra abaixo da imagem */
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave para destaque */
-    transition: transform 0.3s ease-in-out;
-}
-
-.conteudo img:hover {
-    transform: scale(1.02); /* Pequeno zoom ao passar o mouse */
-}
-
-/* --- Estilos do Botão --- */
-#curiosidadeBtn {
     display: block;
-    width: 100%;
-    padding: 15px;
-    background-color: #5d001e;
-    color: #fff;
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Botão */
+button {
+    background-color: #0077cc;
+    color: white;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1em;
-    margin-top: 30px;
-    transition: background-color 0.3s ease, transform 0.1s;
-    font-weight: 700;
+    font-size: 1em;
 }
 
-#curiosidadeBtn:hover {
-    background-color: #a3003a;
+button:hover {
+    background-color: #005fa3;
 }
 
-#curiosidadeBtn:active {
-    transform: scale(0.99);
-}
-
-/* --- Estilos da Mensagem de Curiosidade --- */
-#curiosidadeMensagem {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #fff3cd; /* Cor suave para a caixa de mensagem (alerta/amarelo claro) */
-    color: #856404; /* Cor do texto em contraste */
-    border: 1px solid #ffeeba;
-    border-left: 5px solid #ffc107; /* Borda de destaque na lateral */
-    border-radius: 5px;
-    font-style: italic;
-    text-align: center;
-    min-height: 20px; /* Para manter o espaço inicial */
-}
-
-/* --- Estilos do Rodapé --- */
+/* Rodapé */
 footer {
-    background-color: #333;
-    color: #ccc;
     text-align: center;
+    background-color: #222;
+    color: #ccc;
     padding: 15px 0;
     margin-top: 40px;
-    font-size: 0.9em;
-}
-
-/* --- Media Queries para Responsividade --- */
-@media (max-width: 600px) {
-    header {
-        padding: 30px 10px;
-    }
-
-    header h2 {
-        font-size: 2em;
-    }
-
-    main {
-        margin: 20px 10px;
-        padding: 10px;
-    }
-
-    .conteudo h2 {
-        font-size: 1.5em;
-    }
-
-    #curiosidadeBtn {
-        font-size: 1em;
-        padding: 12px;
-    }
 }
